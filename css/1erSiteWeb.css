@@ -1,0 +1,53 @@
+/* Style global pour l'image de fond de la section d'accueil */
+.content {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/261185/pexels-photo-261185.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* La section d'accueil prend toute la hauteur de la fenêtre */
+    color: white;
+    text-align: center;
+}
+
+/* Les autres sections */
+.section {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    margin-top: 20px; /* Espacement entre les sections */
+    min-height: 100vh; /* Chaque section a une hauteur minimale d'une fenêtre */
+}
+
+/* Style spécifique pour la première section */
+#section1 {
+    margin-top: 0; /* supprimer le margin-top de la première section après l'accueil */
+}
+
+header {
+    position: fixed;       /* fixe le header tout en haut */
+    top: 0;               /* positionne le header tout en haut */
+    width: 100%;         /* prend toute la largeur de l'écran */
+    z-index: 10;        /* header mis au 1er plan   */
+}
+
+.surligne {
+    background-color: rgba(32, 26, 26, 0.7);
+    padding: 5px;       /* un peu d'espace autour du texte car j'aime la clim entre les mots*/
+    border-radius: 5px; /* arrondire le surlignage*/
+}
+
+.BarreDeMenu {
+    background-color: blue;
+}
+
+@media (min-width: 992px) {  /* Pour les écrans plus larges (surtout ordis bureaux) */
+    .navbar-toggler {
+        display: block; /* Force l'affichage de l'icône du menu */
+    }
+}
